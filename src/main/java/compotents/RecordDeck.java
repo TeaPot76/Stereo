@@ -19,7 +19,7 @@ public class RecordDeck extends Component implements IPlay {
         this.playSpeed = playSpeed;
     }
 
-    public boolean play(){
-        return true;
+    public String play(String string){
+        return string;
     }
 }

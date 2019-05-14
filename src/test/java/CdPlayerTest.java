@@ -44,7 +44,8 @@ public class CdPlayerTest {
     }
     @Test
     public void canPlay(){
-        assertEquals(true, cdplayer.play());
+        String string ="yes";
+        assertEquals("yes", cdplayer.play(string));
     }
 
 

@@ -46,7 +46,8 @@ public class RecordDeckTest {
     }
     @Test
     public void canPlay(){
-        assertEquals(true, recordDeck.play());
+        String string = "yes";
+        assertEquals("yes", recordDeck.play(string));
     }
 
 

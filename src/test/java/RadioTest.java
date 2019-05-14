@@ -1,13 +1,23 @@
-import compotents.CdPlayer;
+import compotents.Radio;
 import org.junit.Before;
+import org.junit.Test;
+
+import static junit.framework.TestCase.assertEquals;
 
 public class RadioTest {
 
-    private CdPlayer.Radio radio;
+    private Radio radio;
 
     @Before
     public void before(){
-        radio = new CdPlayer.Radio("Sony", "DDC");
+
+        radio = new Radio("Sony", "DDC");
+    }
+
+    @Test
+    public void tune(){
+        String string = "BBC";
+        assertEquals("BBC", radio.tune(string));
     }
 
 

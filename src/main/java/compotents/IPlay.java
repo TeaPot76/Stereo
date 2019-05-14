@@ -1,5 +1,5 @@
 package compotents;
 
 public interface IPlay {
-    boolean play();
+    String play(String string);
 }
